@@ -1,0 +1,9 @@
+# Related to virtual environment
+.DS_Store
+*.egg-info
+build/
+dist/
+**/__pycache__/**
+
+# Misc
+misc/
