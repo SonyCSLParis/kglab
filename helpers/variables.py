@@ -5,7 +5,7 @@ Variables re-used across projects
 from rdflib import Namespace, XSD, RDF, RDFS, OWL
 
 # Headers
-HEADERS_CSV = {"Accept": "text/csv", "User-Agent": AGENT}
+HEADERS_CSV = {"Accept": "text/csv"}
 HEADERS_RDF_XML = {"Accept": "application/rdf+xml"}
 
 # Sparql endpoints
