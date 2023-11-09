@@ -5,7 +5,7 @@ Helpers related to KG queries
 import io
 import requests
 import pandas as pd
-from helpers.variables import PREFIX_RDFS, STR_RDFS, HEADERS_CSV
+from kglab.helpers.variables import PREFIX_RDFS, STR_RDFS, HEADERS_CSV
 
 def run_query(query: str, sparql_endpoint: str, headers: dict) -> pd.DataFrame:
     """ Using curl requests to run query from sparql endpoint"""
