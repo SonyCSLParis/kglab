@@ -4,3 +4,4 @@ rdflib==7.0.0
 requests==2.31.0
 spacy==3.4.2
 spacy-dbpedia-spotlight==0.2.5
+pandas==2.1.1
