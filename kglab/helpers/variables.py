@@ -2,7 +2,7 @@
 """
 Variables re-used across projects
 """
-from rdflib import Namespace, XSD, RDF, RDFS, OWL, DC
+from rdflib import Namespace, XSD, RDF, RDFS, OWL, DC, SKOS
 
 # Headers
 HEADERS_CSV = {"Accept": "text/csv"}
@@ -30,6 +30,7 @@ STR_RDFS = str(RDFS)
 STR_OWL = str(OWL)
 STR_DC = str(DC)
 STR_DCT = "http://purl.org/dc/terms/"
+STR_SKOS = str(SKOS)
 
 # Namespaces for KGs
 NS_SEM = Namespace(STR_SEM)
@@ -49,6 +50,7 @@ NS_DBR = Namespace(STR_DBR)
 NS_OWL = OWL
 NS_DC = DC
 NS_DCT = Namespace(STR_DCT)
+NS_SKOS = SKOS
 
 # Ontologies prefixes
 PREFIX_SEM = "sem"
@@ -68,3 +70,4 @@ PREFIX_DBR = "dbr"
 PREFIX_OWL = "owl"
 PREFIX_DC = "dc"
 PREFIX_DCT = "dct"
+PREFIX_SKOS = "skos"
