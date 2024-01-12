@@ -4,6 +4,7 @@ Data loading of various files
 """
 import json
 import pandas as pd
+from rdflib import Graph
 
 def open_json(path: str) -> dict:
     """ Json+encoding utf-8 """
@@ -16,3 +17,9 @@ def read_csv(path: str) -> pd.DataFrame:
     df = pd.read_csv(path)
     df = df[[col for col in df.columns if "Unnamed: 0" not in col]]
     return df
+
+def parse_graph(path: str) -> Graph:
+    """ Parsing .ttl file """
+    graph = Graph()
+    graph.parse(path)
+    return graph
